@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/favicon-32x32.png">
+</head>
+<body>
+   
+    <div class="form_container">
+        <div class="success_msg">
+            <div class="icon">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <div>  Message Sent!</div>
+            </div>
+            <p>  <small>Thanks for completing the form. We'll be in touch soon!</small></p>
+        </div>
+
+        <form  id="form" action="">
+        <h3>Contact Us</h3>
+
+<div class="double">
+    <div>
+        <label for="fname" class="label">First Name <sup>*</sup></label>
+        <input type="text" id="fname" />
+        <span  id="fname_err"></span>
+    </div>
+    <div>
+        <label for="lanme" class="label">Last Name <sup>*</sup></label>
+        <input type="text" id="lname"  />
+        <span id="lname_err"></span>
+
+    </div>
+</div>
+<div class="email_div">
+    <label for="email" class="label">Email Address <sup>*</sup></label>
+    <input type="text" id="email"  />
+    <span id="email_err"></span>
+
+</div>
+<div class="qtype">
+    <label for="qtype" class="label">Query Type <sup>*</sup></label>
+    <div class="inputs">
+    <div class="qtypes">
+        <input type="radio" id="general" name="qtype"  />
+        <label for="general">General Enquiry</label>
+    </div>
+    <div class="qtypes">
+        <input type="radio" id="support" name="qtype"  />
+        <label for="support">Support Request</label>
+    </div>
+    </div>
+    <span id="qtype_err"></span>
+
+</div>
+
+<div class="msg_div">
+    <label for="message" class="label">Message <sup>*</sup></label>
+    <textarea id="message"></textarea>
+    <span id="msg_err"></span>
+</div>
+<div class="check">
+<div class="checkbox">
+    <input type="checkbox" id="check"  />
+    <label for="check">  I consent to being contacted by the team</label>
+
+</div>
+<span style="margin-top: -5px" id="check_err"></span>
+
+</div>
+<div class="btn">
+    <input type="submit" value="Submit">
+</div>
+        </form>
+    </div>
+
+  
+<script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
